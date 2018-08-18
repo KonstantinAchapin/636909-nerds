@@ -95,7 +95,30 @@
 
         <div class="filters-sorting">
           <h2 class="visually-hidden">Фильтр сортировки шаблонов по параметрам</h2>
-          <!-- Здесь будет форма сортировки! -->
+          <form>
+          <fieldset>
+            <legend>Сортировать:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-option"
+                 id="by-price" type="radio" name="sorting" value="by-price" checked>
+                <label for="by-price">По цене</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-option"
+                 id="by-type" type="radio" name="sorting" value="by-type">
+                <label for="by-type">По типу</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-option"
+                 id="by-name" type="radio" name="sorting" value="by-name">
+                <label for="by-name">По названию</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="visually-hidden">Вперед</button>
+          <button class="visually-hidden">Назад</button>
+          <form>
         </div>
 
         <ul class="catalog-list">
