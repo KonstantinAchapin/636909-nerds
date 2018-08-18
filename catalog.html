@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-header-navigator">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" aria-label="Вернуться на главную страницу" href="#">
           <img src="img/svg-image/nerds-logo.svg" width="160" height="65"
           alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -18,7 +18,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Корзина</li>
+          <li><a class="basket" href="basket.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -119,10 +119,10 @@
             <a>1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a aria-label="Перейти на вторую страницу" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a aria-label="Перейти на третью страницу" href="#">3</a>
           </li>
         </ul>
       </nav>
@@ -131,15 +131,15 @@
 
     <footer>
       <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="map">
-          <img src="img/map-marker.png" width="367" height="190"
-          alt="Метка на карте">
-          <!-- Здесь фоновая карта! -->
-          <p class="footer-contact">
-          NЁRDS DESIGNE STUDIO<br>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          тел.+7 (812) 275-75-75</p>
-          <span class="button footer-contact-button">Напишите нам</span>
+      <div class="map">
+        <img src="img/map-marker.png" width="367" height="190"
+        alt="Метка на карте">
+        <!-- Здесь фоновая карта! -->
+        <p class="footer-contact">
+        NЁRDS DESIGN STUDIO<br>
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        тел.+7 (812) 275-75-75</p>
+        <a class="footer-contact-button" href="write-us.html">Напишите нам</a>
       </div>
       <div class="sentence">
         <b>Давайте дружить, это выгодно!</b>
@@ -147,15 +147,12 @@
       </div>
       <div class="footer-social">
         <ul>
-          <li>
-            <a class="social-button" href="https://vk.com">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="https://www.facebook.com">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="https://www.instagram.com">Инстаграм</a>
-          </li>
+          <li><a class="social-button" aria-label="Наша группа ВКонтакте"
+            href="https://vk.com">Вконтакте</a></li>
+          <li><a class="social-button" aria-label="Наша группа Фейсбук"
+            href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-button" aria-label="Наша группа Инстаграм"
+            href="https://www.instagram.com">Инстаграм</a></li>
         </ul>
       </div>
     </footer>

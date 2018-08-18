@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <nav class="main-header-navigator">
-        <a class="main-header-logo" href="#">
+        <a class="main-header-logo" aria-label="Вернуться на главную страницу" href="#">
           <img src="img/svg-image/nerds-logo.svg" width="160" height="65"
           alt="Логотип дизайн-студии «Нёрдс»">
         </a>
@@ -19,7 +19,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link">Корзина</li>
+          <li><a class="basket" href="basket.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -28,28 +28,28 @@
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <section class="slider">
-        <span class="slider-selector first"></span>
-        <span class="slider-selector second"></span>
-        <span class="slider-selector third"></span>
+        <button class="slider-selector first">Включает первый слайд</button>
+        <button class="slider-selector second">Включает второй слайд</button>
+        <button class="slider-selector third">Включает третий слайд</button>
         <ul>
           <li class="good-design">
             <h3>Долго, дорого, скурпулезно.</h3>
             <img src="img/nerds-index-slide1.png" width="698" height="413"
-            alt="Изображения 1 слайда">
+            alt="Изображение 1 слайда">
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
             <a class="button slider-button" href="gd.html">Узнать больше</a>
           </li>
           <li class="ideal-proportions">
             <h3>Любим математику как никто другой</h3>
             <img src="img/nerds-index-slide2.png" width="698" height="413"
-            alt="Изображения 2 слайда">
+            alt="Изображение 2 слайда">
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button slider-button" href="ip.html">Узнать больше</a>
           </li>
           <li class="work-hard">
             <h3>Только ночь, только хардкор</h3>
             <img src="img/nerds-index-slide3.png" width="698" height="413"
-            alt="Изображения 3 слайда">
+            alt="Изображение 3 слайда">
             <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a class="button slider-button" href="wh.html">Узнать больше</a>
           </li>
@@ -63,19 +63,19 @@
               <h3>Веб-сайты</h3>
               <img src="img/illustration-1.jpg" width="300" height="146" alt="Изображение ноутбука">
               <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-              <span class="button services-button web-sites-button">Заказать</span>
+              <a class="button services-button web-sites-button" href="catalog.html">Заказать</a>
           </li>
           <li class="services-mobile-app">
               <h3>Приложения</h3>
               <img src="img/illustration-2.jpg" width="300" height="146" alt="Изображение телефонов">
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <span class="button services-button mobile-app-button">Заказать</span>
+              <a class="button services-button mobile-app-button" href="catalog.html">Заказать</a>
           </li>
           <li class="services-presentations">
               <h3>Презентации</h3>
               <img src="img/illustration-3.jpg" width="300" height="146" alt="Изображение информационной доски">
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <span class="button services-button presentations-button">Заказать</span>
+              <a class="button services-button presentations-button" href="catalog.html">Заказать</a>
           </li>
         </ul>
       </section>
@@ -154,7 +154,7 @@
         NЁRDS DESIGN STUDIO<br>
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         тел.+7 (812) 275-75-75</p>
-        <span class="button footer-contact-button">Напишите нам</span>
+        <a class="footer-contact-button" href="write-us.html">Напишите нам</a>
       </div>
       <div class="sentence">
         <b>Давайте дружить, это выгодно!</b>
@@ -162,9 +162,12 @@
       </div>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="https://vk.com">Вконтакте</a></li>
-          <li><a class="social-button" href="https://www.facebook.com">Фейсбук</a></li>
-          <li><a class="social-button" href="https://www.instagram.com">Инстаграм</a></li>
+          <li><a class="social-button" aria-label="Наша группа ВКонтакте"
+            href="https://vk.com">Вконтакте</a></li>
+          <li><a class="social-button" aria-label="Наша группа Фейсбук"
+            href="https://www.facebook.com">Фейсбук</a></li>
+          <li><a class="social-button" aria-label="Наша группа Инстаграм"
+            href="https://www.instagram.com">Инстаграм</a></li>
         </ul>
       </div>
     </footer>
