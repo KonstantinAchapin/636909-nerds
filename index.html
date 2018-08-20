@@ -27,9 +27,11 @@
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <section class="slider">
-        <button class="slider-selector first">Включает первый слайд</button>
-        <button class="slider-selector second">Включает второй слайд</button>
-        <button class="slider-selector third">Включает третий слайд</button>
+        <form>
+          <input type="radio" class="slider-selector" name="slider-icons" value="Включает первый слайд">
+          <input type="radio" class="slider-selector" name="slider-icons" value="Включает второй слайд">
+          <input type="radio" class="slider-selector" name="slider-icons" value="Включает третий слайд">
+        </form>
         <ul>
           <li class="good-design">
             <h3>Долго, дорого, скурпулезно.</h3>
@@ -172,18 +174,18 @@
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
-      <form class="dispatch-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="username">Ваше имя:</label>
-          <input class="dispath-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="feedback-form-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="email">Ваш e-mail:</label>
-          <input class="dispath-email" id="email" type="text" name="email" placeholder="email@example.com">
+          <input class="feedback-form-email" id="email" type="text" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="message">Текст письма:</label>
-          <textarea class="dispath-message" id="message" name="message" placeholder="В свободной форме"></textarea>
+          <textarea class="feedback-form-message" id="message" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>

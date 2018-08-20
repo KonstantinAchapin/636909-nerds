@@ -30,10 +30,12 @@
         <form class="filter-template" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input class="range" type="range" min="0" max="15000" step="1000"
-            value="0" name="price"</input>
-            <p>
-            <span>от 0</span><span>     до 15000</span>
+            <input class="range" type="range" min="0" max="20000" step="1000"
+             value="0" name="price">
+            <p class="min-price"><span class="min-price-title">от </span><span
+             class="min-price-value">0</span>
+            <p class="max-price"><span class="max-price-title">до </span><span
+              class="max-price-value">20000</span>
             </p>
           </fieldset>
           <fieldset>
@@ -96,29 +98,33 @@
         <div class="filters-sorting">
           <h2 class="visually-hidden">Фильтр сортировки шаблонов по параметрам</h2>
           <form>
-          <fieldset>
-            <legend>Сортировать:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-option"
-                 id="by-price" type="radio" name="sorting" value="by-price" checked>
-                <label for="by-price">По цене</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-option"
-                 id="by-type" type="radio" name="sorting" value="by-type">
-                <label for="by-type">По типу</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-option"
-                 id="by-name" type="radio" name="sorting" value="by-name">
-                <label for="by-name">По названию</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="visually-hidden">Вперед</button>
-          <button class="visually-hidden">Назад</button>
-          <form>
+            <fieldset>
+              <legend>Сортировать:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-option"
+                   id="by-price" type="radio" name="sort-type" value="by-price" checked>
+                  <label for="by-price">По цене</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-option"
+                   id="by-type" type="radio" name="sort-type" value="by-type">
+                  <label for="by-type">По типу</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-option"
+                   id="by-name" type="radio" name="sort-type" value="by-name">
+                  <label for="by-name">По названию</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <input class="visually-hidden" type="radio"
+               name="sort-direction" value="По возрастанию" checked>
+              <input class="visually-hidden" type="radio"
+               name="sort-direction" value="По убыванию">
+            </fieldset>
+          </form>
         </div>
 
         <ul class="catalog-list">
@@ -241,18 +247,18 @@
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
-      <form class="dispatch-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="username">Ваше имя:</label>
-          <input class="dispath-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="feedback-form-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="email">Ваш e-mail:</label>
-          <input class="dispath-email" id="email" type="text" name="email" placeholder="email@example.com">
+          <input class="feedback-form-email" id="email" type="text" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="message">Текст письма:</label>
-          <textarea class="dispath-message" id="message" name="message" placeholder="В свободной форме"></textarea>
+          <textarea class="feedback-form-message" id="message" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
