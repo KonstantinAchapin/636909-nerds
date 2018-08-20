@@ -32,10 +32,13 @@
             <legend>Стоимость:</legend>
             <input class="range" type="range" min="0" max="20000" step="1000"
              value="0" name="price">
-            <p class="min-price"><span class="min-price-title">от </span><span
-             class="min-price-value">0</span>
-            <p class="max-price"><span class="max-price-title">до </span><span
-              class="max-price-value">20000</span>
+            <p class="min-price">
+              <span class="min-price-title">от </span>
+              <span class="min-price-value">0</span>
+            </p>
+            <p class="max-price">
+              <span class="max-price-title">до </span>
+              <span class="max-price-value">15000</span>
             </p>
           </fieldset>
           <fieldset>
@@ -120,9 +123,9 @@
             </fieldset>
             <fieldset>
               <input class="visually-hidden" type="radio"
-               name="sort-direction" value="По возрастанию" checked>
+               name="sort-direction" value="asc" checked>
               <input class="visually-hidden" type="radio"
-               name="sort-direction" value="По убыванию">
+               name="sort-direction" value="desc">
             </fieldset>
           </form>
         </div>
