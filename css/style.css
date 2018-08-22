@@ -127,7 +127,7 @@ a {
 .about-us-left-block b {
   font-size: 45px;
   line-height: 45px;
-    color: #000000;
+  color: #000000;
 }
 .about-us-left-block p {
   font-size: 45px;
@@ -299,6 +299,124 @@ a {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+
+
+
+
+.filters fieldset {
+  border: none;
+}
+.filters-sorting fieldset {
+  border: none;
+}
+.filters li {
+  list-style: none;
+}
+.filters-sorting li {
+  list-style: none;
+}
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.filters-sorting legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.filters-sorting label {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}
+.filters-sorting label:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+.filters-sorting label:active {
+  color: #000000;
+}
+.min-price span,
+.max-price span {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.background-range {
+  background-color: #eeeeee;
+}
+.min-price-value,
+.max-price-value {
+  background-color: #eeeeee;
+}
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  border: none;
+}
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: d5d5d5;
+  outline: none;
+}
+
+
+.catalog-list li {
+  list-style: none;
+}
+.catalog-list h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.catalog-list p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.catalog-item-price {
+  background-color: #eeeeee;
+}
+.pagination li {
+  list-style: none;
+}
+.pagination a {
+  list-style: none;
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+}
+.pagination a:hover {
+  background-color: #dfdfdf;
+}
+.pagination a:active {
+  background-color: #d5d5d5;
+}
+.pagination a:focus {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+.pagination-item-current a {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+.pagination-item-current a:hover {
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
