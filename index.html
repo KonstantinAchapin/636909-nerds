@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic"
+     rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +31,7 @@
       <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
       <section class="slider">
-        <form>
+        <form class="visually-hidden">
           <input type="radio" class="slider-selector" name="slider-icons" value="Включает первый слайд">
           <input type="radio" class="slider-selector" name="slider-icons" value="Включает второй слайд">
           <input type="radio" class="slider-selector" name="slider-icons" value="Включает третий слайд">
@@ -37,7 +41,7 @@
             <h3>Долго, дорого, скурпулезно.</h3>
             <img src="img/nerds-index-slide1.png" width="698" height="413"
             alt="Изображение 1 слайда">
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="button slider-button" href="gd.html">Узнать больше</a>
           </li>
           <li class="ideal-proportions">
@@ -84,10 +88,10 @@
       <section class="about-us">
         <h2 class="visually-hidden">О студии</h2>
         <div class="about-us-left-block">
-          <p><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты.
           Ставим математический расчет превыше креатива.
-          Работаем не покладая рук как роботы</p>
+          Работаем не покладая рук как роботы.</p>
           <p>Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
@@ -152,10 +156,10 @@
         alt="Метка на карте">
         <!-- Здесь фоновая карта! -->
         <p class="footer-contact">
-        NЁRDS DESIGN STUDIO<br>
+        <strong>NЁRDS DESIGN STUDIO</strong><br>
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         тел.+7 (812) 275-75-75</p>
-        <a class="footer-contact-button" href="write-us.html">Напишите нам</a>
+        <a class="button footer-contact-button" href="write-us.html">Напишите нам</a>
       </div>
       <div class="sentence">
         <b>Давайте дружить, это выгодно!</b>
@@ -177,11 +181,11 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="username">Ваше имя:</label>
-          <input class="feedback-form-name" id="username" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="feedback-form-name" id="username" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="email">Ваш e-mail:</label>
-          <input class="feedback-form-email" id="email" type="text" name="email" placeholder="email@example.com">
+          <input class="feedback-form-email" id="email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="message">Текст письма:</label>
