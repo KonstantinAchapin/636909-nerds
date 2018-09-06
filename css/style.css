@@ -732,8 +732,8 @@ input[type="radio"].visually-hidden {
 .modal {
   display: none;
   position: fixed;
-  top: 20px;
-  left: 196px;
+  top: 3%;
+  left: 15%;
   width: 800px;
   height: 410px;
   padding: 90px 80px;
@@ -852,6 +852,7 @@ input[type="radio"].visually-hidden {
   padding-left: 15px;
 
   border: 2px solid #d7dcde;
+  border-radius: 2px;
   font-weight: lighter;
   font-size: 14px;
   line-height: 18px;
@@ -863,6 +864,7 @@ input[type="radio"].visually-hidden {
   padding-left: 15px;
 
   border: 2px solid #d7dcde;
+  border-radius: 2px;
   font-weight: lighter;
   font-size: 14px;
   line-height: 18px;
