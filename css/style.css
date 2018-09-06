@@ -588,7 +588,7 @@ input[type="radio"].visually-hidden {
   min-width: 268px;
   min-height: 277px;
   padding-left: 50px;
-  padding-top: 35px;
+  padding-top: 51px;
 
   background-color: #ffffff;
 }
@@ -605,7 +605,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .adress {
-  padding-top: 7px;
+  padding-top: 23px;
   padding-bottom: 0px;
 
   line-height: 20px;
