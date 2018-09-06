@@ -712,7 +712,23 @@ input[type="radio"].visually-hidden {
 }
 
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
 
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 .modal {
   display: none;
   position: fixed;
@@ -729,8 +745,10 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   z-index: 500;
 }
-.modal:active {
+.modal-show {
   display: block;
+
+  animation: bounce 0.6s;
 }
 .modal-close {
   position: absolute;
@@ -1010,8 +1028,12 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 .filters-sorting .option-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-right: 0px;
-  width: 45px;
+  margin-bottom: 3px;
+  width: 39px;
 
   list-style: none;
   opacity: 1;
@@ -1065,30 +1087,26 @@ input[type="radio"].visually-hidden {
 .asc-button {
   width: 10px;
   height: 10px;
-  margin-top: 5px;
-  margin-left: 5px;
 
   background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   border: none;
   background-color: inherit;
+  opacity: 0.3;
 }
 .desc-button {
   width: 10px;
   height: 10px;
-  margin-top: 6px;
-  margin-left: 12px;
 
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: inherit;
-}
-.asc-button-focus {
   opacity: 0.3;
 }
-.desc-button-focus {
-  opacity: 0.3;
+.asc-button.active,
+.desc-button.active {
+  opacity: 1;
 }
 .filter-option label {
   margin-left: 37px;
@@ -1147,14 +1165,12 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
   left: -35px;
   top: -4px;
-  width: 28px;
-  height: 28px;
   width: 28px;
   height: 28px;
 
