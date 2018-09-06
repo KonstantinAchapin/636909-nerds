@@ -907,8 +907,8 @@ input[type="radio"].visually-hidden {
 .modal input {
   width: 341px;
   height: 46px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-top: 6px;
   margin-right: 40px;
   padding-left: 16px;
