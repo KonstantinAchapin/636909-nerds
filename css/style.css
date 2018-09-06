@@ -714,29 +714,25 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+transform: translate(-50%,-2000px);
+}
+70% {
+transform: translate(-50%,-25%);
+}
+100% {
+transform: translate(-50%,-50%);
+}
 }
 .modal {
   display: none;
   position: fixed;
-  top: 3%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 800px;
   height: 410px;
   padding: 90px 80px;
+  padding-top: 55px;
 
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
@@ -799,6 +795,7 @@ input[type="radio"].visually-hidden {
 }
 .feedback-flex-message {
   width: 760px;
+  margin-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +806,7 @@ input[type="radio"].visually-hidden {
 }
 .modal h2 {
   margin: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 
   font-size: 45px;
   line-height: 45px;
@@ -859,7 +856,7 @@ input[type="radio"].visually-hidden {
 }
 .modal textarea {
   width: 704px;
-  height: 60px;
+  height: 118px;
   margin-top: 13px;
   padding-left: 15px;
 
@@ -868,6 +865,7 @@ input[type="radio"].visually-hidden {
   font-weight: lighter;
   font-size: 14px;
   line-height: 18px;
+  resize: none;
 }
 .modal input:hover {
   border: 2px solid #b4b9bb;
@@ -944,6 +942,7 @@ input[type="radio"].visually-hidden {
 .modal .button {
   border: 0px;
   font-weight: normal;
+  margin-top: -12px;
 }
 
 
