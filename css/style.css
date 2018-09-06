@@ -712,15 +712,34 @@ input[type="radio"].visually-hidden {
 }
 
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-transform: translate(-50%,-2000px);
+-webkit-transform: translate(-50%,-2000px);
+        transform: translate(-50%,-2000px);
 }
 70% {
-transform: translate(-50%,-25%);
+-webkit-transform: translate(-50%,-25%);
+        transform: translate(-50%,-25%);
 }
 100% {
-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+}
+}
+
+
+@keyframes bounce {
+  0% {
+-webkit-transform: translate(-50%,-2000px);
+        transform: translate(-50%,-2000px);
+}
+70% {
+-webkit-transform: translate(-50%,-25%);
+        transform: translate(-50%,-25%);
+}
+100% {
+-webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
 }
 }
 .modal {
@@ -728,9 +747,11 @@ transform: translate(-50%,-50%);
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 800px;
-  height: 410px;
+  height: 445px;
   padding: 90px 80px;
   padding-top: 55px;
 
@@ -744,7 +765,9 @@ transform: translate(-50%,-50%);
 .modal-show {
   display: block;
 
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+
+          animation: bounce 0.6s;
 }
 .modal-close {
   position: absolute;
@@ -806,7 +829,9 @@ transform: translate(-50%,-50%);
 }
 .modal h2 {
   margin: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+  margin-top: 11px;
+  margin-left: 19px;
 
   font-size: 45px;
   line-height: 45px;
@@ -814,6 +839,8 @@ transform: translate(-50%,-50%);
 }
 .user-form {
   width: 760px;
+  margin-left: 20px;
+  margin-bottom: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,7 +859,8 @@ transform: translate(-50%,-50%);
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
+  margin-left: 20px;
 }
 .modal label {
   font-size: 16px;
@@ -841,12 +869,19 @@ transform: translate(-50%,-50%);
   font-weight: 700;
 }
 .modal input {
-  width: 330px;
-  height: 48px;
+  width: 341px;
+  height: 46px;
   padding: 0px;
   margin: 0px;
-  margin-top: 13px;
-  padding-left: 15px;
+  margin-top: 6px;
+  margin-right: 40px;
+  padding-left: 16px;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 18px;
 
   border: 2px solid #d7dcde;
   border-radius: 2px;
@@ -854,11 +889,15 @@ transform: translate(-50%,-50%);
   font-size: 14px;
   line-height: 18px;
 }
+.modal input:first-child {
+margin-left: 20px;
+}
 .modal textarea {
-  width: 704px;
-  height: 118px;
-  margin-top: 13px;
+  width: 739px;
+  height: 106px;
+  margin-top: 9px;
   padding-left: 15px;
+  padding-top: 7px;
 
   border: 2px solid #d7dcde;
   border-radius: 2px;
@@ -893,56 +932,57 @@ transform: translate(-50%,-50%);
 }
 .modal input::-webkit-input-placeholder {
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal input::-ms-input-placeholder {
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal input:-ms-input-placeholder {
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal input::placeholder {
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal textarea::-webkit-input-placeholder {
   padding-top: 5px;
 
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal textarea:-ms-input-placeholder {
   padding-top: 5px;
 
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal textarea::-ms-input-placeholder {
   padding-top: 5px;
 
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal textarea::placeholder {
   padding-top: 5px;
 
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 .modal .button {
+  width: 260px;
   border: 0px;
   font-weight: normal;
-  margin-top: -12px;
+  margin-left: 21px;
 }
 
 
@@ -1029,9 +1069,15 @@ transform: translate(-50%,-50%);
   opacity: 1;
 }
 .filters-sorting .option-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 0px;
   margin-bottom: 3px;
   width: 39px;
