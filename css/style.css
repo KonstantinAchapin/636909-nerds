@@ -1229,6 +1229,11 @@ input[type="radio"].visually-hidden {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  opacity: 0.4;
+}
+
+.filter-option label:hover {
+  opacity: 1;
 }
 
 .filter-item .filter-input[type=radio] {
