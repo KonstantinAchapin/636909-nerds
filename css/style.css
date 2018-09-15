@@ -611,12 +611,11 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.client-item img:hover {
+.client-item:hover img {
   opacity: 1;
 }
 
-.clients .client-item:active {
-  list-style: none;
+.client-item:active img {
   opacity: 0.1;
 }
 
