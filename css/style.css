@@ -586,12 +586,32 @@ input[type="radio"].visually-hidden {
 }
 
 .clients .client-item {
+  position: relative;
   list-style: none;
+}
+
+.client-item img {
   opacity: 0.2;
 }
 
-.clients .client-item:hover {
-  list-style: none;
+.client-item:after {
+  content: "";
+  position: absolute;
+  top: 92px;
+  left: 255px;
+  width: 51px;
+  height: 1.5px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #eeeeee;
+}
+
+.client-item:last-child:after {
+  display: none;
+}
+
+.client-item img:hover {
   opacity: 1;
 }
 
