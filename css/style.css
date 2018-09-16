@@ -520,7 +520,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-right-block sup {
-  top: -0.4em;
+  top: -16px;
+  font-size: 26px;
 }
 
 .about-us-right-block li {
@@ -539,7 +540,7 @@ input[type="radio"].visually-hidden {
 .about-us-right-block span:nth-child(1) {
   display: block;
   margin-top: -2px;
-  margin-left: -2px;
+  margin-left: 2px;
   margin-bottom: 36px;
   font-size: 45px;
   line-height: 10.06px;
@@ -809,10 +810,11 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 
   10%,
@@ -820,14 +822,41 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translate(-51%, -50%);
+    -webkit-transform: translate(-51%, -50%);
+            transform: translate(-51%, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(-49%, -50%);
+    -webkit-transform: translate(-49%, -50%);
+            transform: translate(-49%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-51%, -50%);
+            transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(-49%, -50%);
+            transform: translate(-49%, -50%);
   }
 }
 
@@ -1116,6 +1145,7 @@ input[type="radio"].visually-hidden {
 .container-page-title h1 {
   font-size: 55px;
   font-weight: 500;
+  color: #000000;
 }
 
 .page-title {
@@ -1310,6 +1340,11 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.asc-button:hover,
+.desc-button:hover {
+  opacity: 0.4;
+}
+
 .asc-button:active,
 .desc-button:active {
   opacity: 1;
@@ -1345,8 +1380,8 @@ input[type="radio"].visually-hidden {
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  left: -35px;
-  top: -4px;
+  left: -36px;
+  top: -1px;
   width: 28px;
   height: 28px;
   background-image: url(../img/radio-off.svg);
@@ -1357,8 +1392,8 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked+label::before {
   content: "";
   position: absolute;
-  left: -35px;
-  top: -4px;
+  left: -36px;
+  top: -1px;
   width: 28px;
   height: 28px;
   background-image: url(../img/radio-on.svg);
@@ -1369,7 +1404,15 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.filter-option input[type="radio"]:disabled+label, [type="checkbox"]:disabled+label {
+  opacity: 0.1;
+}
+
 .filter-option input[type="radio"]:disabled+label:before, [type="checkbox"]:disabled+label:before {
+  opacity: 1;
+}
+
+.filter-option .filter-input-radio {
   opacity: 0.1;
 }
 
@@ -1381,7 +1424,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left: -35px;
-  top: -4px;
+  top: -1;
   width: 28px;
   height: 28px;
   background-image: url(../img/checkbox-off.svg);
@@ -1393,7 +1436,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   left: -35px;
-  top: -4px;
+  top: -1;
   width: 28px;
   height: 28px;
   background-image: url(../img/checkbox-on.svg);
@@ -1414,12 +1457,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item:nth-child(2) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   border: none;
-}
-
-.filter-item legend {
-  margin-bottom: 19px;
 }
 
 .filter-item ul {
@@ -1442,6 +1481,19 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+}
+
+.filter-item .price-legend {
+  margin-bottom: 22px;
+}
+
+.filter-item .option-radio-legend {
+  margin-bottom: 17px;
+}
+
+.filter-item .option-checkbox-legend {
+  margin-bottom: 16px;
+  line-height: 30px;
 }
 
 .range-controls {
@@ -1497,7 +1549,7 @@ input[type="radio"].visually-hidden {
 .price-controls label {
   display: inline-block;
   width: 50%;
-  margin-top: 4px;
+  margin-top: 2px;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1505,9 +1557,9 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
+  padding: 9px 10px;
   margin-left: 10px;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1523,7 +1575,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-button {
-  margin-top: -9px;
+  margin-top: -6px;
   font-size: 16px;
   width: 260px;
   line-height: 18px;
